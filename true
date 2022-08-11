@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/svelte-gitter/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+	<link rel="modulepreload" href="/svelte-gitter/_app/immutable/start-103f41bc.js">
+	<link rel="modulepreload" href="/svelte-gitter/_app/immutable/chunks/index-e1d4c8bd.js">
+	<link rel="modulepreload" href="/svelte-gitter/_app/immutable/chunks/singletons-eca981c1.js">
+	</head>
+	<body>
+		<div>
+		<script type="module" data-sveltekit-hydrate="45h">
+		import { set_public_env, start } from "/svelte-gitter/_app/immutable/start-103f41bc.js";
+
+		set_public_env({});
+
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
+			paths: {"base":"/svelte-gitter","assets":"/svelte-gitter"},
+			session: {},
+			route: true,
+			spa: true,
+			trailing_slash: "never",
+			hydrate: null
+		});
+	</script></div>
+	</body>
+</html>
