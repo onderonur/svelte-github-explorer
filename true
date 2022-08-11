@@ -2,23 +2,23 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="./favicon.png" />
+		<link rel="icon" href="/svelte-gitter/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-	<link rel="modulepreload" href="/_app/immutable/start-ac6b78ff.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-e1d4c8bd.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/singletons-eca981c1.js">
+	<link rel="modulepreload" href="/svelte-gitter/_app/immutable/start-a163482a.js">
+	<link rel="modulepreload" href="/svelte-gitter/_app/immutable/chunks/index-e1d4c8bd.js">
+	<link rel="modulepreload" href="/svelte-gitter/_app/immutable/chunks/singletons-eca981c1.js">
 	</head>
 	<body>
 		<div>
 		<script type="module" data-sveltekit-hydrate="45h">
-		import { set_public_env, start } from "/_app/immutable/start-ac6b78ff.js";
+		import { set_public_env, start } from "/svelte-gitter/_app/immutable/start-a163482a.js";
 
 		set_public_env({});
 
 		start({
 			target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
-			paths: {"base":"","assets":""},
+			paths: {"base":"/svelte-gitter","assets":"/svelte-gitter"},
 			session: {},
 			route: true,
 			spa: true,
