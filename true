@@ -5,14 +5,14 @@
 		<link rel="icon" href="/svelte-gitter/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-	<link rel="modulepreload" href="/svelte-gitter/_app/immutable/start-34abb298.js">
+	<link rel="modulepreload" href="/svelte-gitter/_app/immutable/start-b090990f.js">
 	<link rel="modulepreload" href="/svelte-gitter/_app/immutable/chunks/index-e1d4c8bd.js">
 	<link rel="modulepreload" href="/svelte-gitter/_app/immutable/chunks/singletons-eca981c1.js">
 	</head>
 	<body>
 		<div>
 		<script type="module" data-sveltekit-hydrate="45h">
-		import { set_public_env, start } from "/svelte-gitter/_app/immutable/start-34abb298.js";
+		import { set_public_env, start } from "/svelte-gitter/_app/immutable/start-b090990f.js";
 
 		set_public_env({});
 
