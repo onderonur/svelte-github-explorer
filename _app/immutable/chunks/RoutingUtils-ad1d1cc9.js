@@ -1,0 +1,1 @@
+import{b as t}from"./paths-b9644fda.js";const $={home:({username:r,page:s}={})=>{const e=new URLSearchParams;r&&e.set("username",r),s&&e.set("page",s);const o=e.toString();return`${t}/${o?`?${o}`:""}`},user:r=>`${t}/${r}`,repository:({username:r,repository:s})=>`${t}/${r}/${s}`};export{$ as r};
