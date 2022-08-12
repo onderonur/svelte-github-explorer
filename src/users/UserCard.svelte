@@ -9,7 +9,7 @@
 
 <Card>
 	<div class="aspect-square overflow-hidden">
-		<img class="w-full" src={user.avatar_url} alt={user.login} />
+		<img src={user.avatar_url} alt={user.login} />
 	</div>
 	<CardContent class="flex flex-col gap-2">
 		<h1>

@@ -2,17 +2,16 @@
 	import '../app.css';
 	import Link from '../common/Link.svelte';
 	import SearchForm from '../users/UserSearchForm.svelte';
-	import { base } from '$app/paths';
 	import GitHubIcon from '../icons/GitHubIcon.svelte';
+	import Head from '../common/Head.svelte';
+	import { routes } from '../routing/RoutingUtils';
 </script>
 
-<svelte:head>
-	<title>svelte-gitter</title>
-</svelte:head>
+<Head />
 
 <div class="absolute inset-0 flex flex-col">
 	<header class="h-16 bg-slate-700 flex items-center justify-between gap-4 p-4">
-		<Link href={`${base}/`} class="text-white font-semibold text-2xl">svelte-gitter</Link>
+		<Link href={routes.home()} class="text-white font-semibold text-2xl">svelte-gitter</Link>
 		<Link
 			href="https://github.com/onderonur/svelte-gitter"
 			target="_blank"

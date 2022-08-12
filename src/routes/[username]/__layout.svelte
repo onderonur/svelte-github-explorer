@@ -1,8 +1,9 @@
 <script>
 	import { page } from '$app/stores';
 	import { fetchUser } from '../../users/UserUtils';
-	import UserInfo from '../../users/UserInfo.svelte';
+	import UserCard from '../../users/UserCard.svelte';
 	import Fetcher from '../../common/Fetcher.svelte';
+	import Head from '../../common/Head.svelte';
 
 	let username;
 	let userFetcher;
@@ -13,16 +14,14 @@
 	}
 </script>
 
-<svelte:head>
-	<title>svelte-gitter | {username}</title>
-</svelte:head>
+<Head title={username} />
 
 <Fetcher fetcherFn={userFetcher} let:data={user}>
 	<div class="flex gap-4 flex-col md:flex-row">
-		<div class="mx-auto max-w-xs shrink-0 w-full">
-			<UserInfo {user} />
+		<div class="mx-auto basis-72 flex-none max-w-xs">
+			<UserCard {user} />
 		</div>
-		<div class="w-full min-w-0">
+		<div class="flex-1 min-w-0">
 			<slot />
 		</div>
 	</div>

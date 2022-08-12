@@ -1,9 +1,11 @@
 <script>
-	export let type;
+	export let type = '';
+	let className = '';
+	export { className as class };
 </script>
 
 <button
-	class="border-0 bg-emerald-200 rounded-md rounded-l-none text-emerald-700 font-semibold px-4 py-2"
+	class={`border-0 bg-emerald-200 rounded-md text-emerald-700 font-semibold px-4 py-2 ${className}`}
 	on:click
 	{type}
 >

@@ -1,64 +1,48 @@
 <script>
 	import Link from '../common/Link.svelte';
-	import Chip from '../common/Chip.svelte';
 	import Card from '../common/Card.svelte';
 	import CardContent from '../common/CardContent.svelte';
-	import ListItem from '../common/ListItem.svelte';
-	import Count from '../common/Count.svelte';
-	import { base } from '$app/paths';
+	import RepositoryCountInfo from './RepositoryCountInfo.svelte';
+	import RepositoryLanguage from './RepositoryLanguage.svelte';
+	import RepositoryTopics from './RepositoryTopics.svelte';
+	import { routes } from '../routing/RoutingUtils';
 
-	export let userRepository;
+	export let repository;
 </script>
 
 <Card>
 	<CardContent class="flex flex-col gap-2">
 		<div>
 			<div class="flex justify-between gap-2">
-				<Link href={`${base}/${userRepository.full_name}`} class="font-semibold text-lg">
-					{userRepository.name}
+				<Link
+					href={routes.repository({
+						username: repository.owner.login,
+						repository: repository.name
+					})}
+					class="font-semibold text-lg"
+				>
+					{repository.name}
 				</Link>
 				<div class="text-slate-400 text-sm">
-					{new Date(userRepository.created_at).toLocaleDateString()}
+					{new Date(repository.created_at).toLocaleDateString()}
 				</div>
 			</div>
-			{#if userRepository.description}
-				<p>{userRepository.description}</p>
+			{#if repository.description}
+				<p>{repository.description}</p>
 			{/if}
 		</div>
-		{#if userRepository.homepage}
-			<Link href={userRepository.homepage} target="_blank" rel="noopener noreferrer">
-				{userRepository.homepage}
+		{#if repository.homepage}
+			<Link href={repository.homepage} target="_blank" rel="noopener noreferrer">
+				{repository.homepage}
 			</Link>
 		{/if}
-		<ul class="flex flex-wrap gap-2 items-center">
-			<ListItem hasMiddot>
-				<Count count={userRepository.stargazers_count} suffix="Stars" />
-			</ListItem>
-			<ListItem hasMiddot>
-				<Count count={userRepository.forks_count} suffix="Forks" />
-			</ListItem>
-			<ListItem hasMiddot>
-				<Count count={userRepository.watchers} suffix="Watchers" />
-			</ListItem>
-			<ListItem hasMiddot>
-				<Count count={userRepository.open_issues} suffix="Open Issues" />
-			</ListItem>
-		</ul>
-		{#if userRepository.topics.length}
-			<ul class="flex flex-wrap gap-1">
-				{#each userRepository.topics as topic}
-					<ListItem>
-						<Chip>
-							{topic}
-						</Chip>
-					</ListItem>
-				{/each}
-			</ul>
-		{/if}
-		{#if userRepository.language}
-			<div>
-				<Chip color="blue">{userRepository.language}</Chip>
-			</div>
-		{/if}
+		<RepositoryCountInfo
+			stargazers={repository.stargazers_count}
+			forks={repository.forks_count}
+			watchers={repository.watchers}
+			openIssues={repository.open_issues}
+		/>
+		<RepositoryTopics topics={repository.topics} />
+		<RepositoryLanguage language={repository.language} />
 	</CardContent>
 </Card>

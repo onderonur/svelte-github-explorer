@@ -1,18 +1,18 @@
 <script>
 	import { page } from '$app/stores';
-	import { fetchUserRepositories } from '../../users/UserUtils';
-	import UserRepositories from '../../users/UserRepositories.svelte';
+	import { fetchRepositories } from '../../repositories/RepositoryUtils';
+	import RepositoryList from '../../repositories/RepositoryList.svelte';
 	import Fetcher from '../../common/Fetcher.svelte';
 
 	let username;
-	let userRepositoriesFetcher;
+	let repositoriesFetcher;
 
 	$: {
 		username = $page.params.username;
-		userRepositoriesFetcher = fetchUserRepositories(username);
+		repositoriesFetcher = fetchRepositories(username);
 	}
 </script>
 
-<Fetcher fetcherFn={userRepositoriesFetcher} let:data={userRepositories}>
-	<UserRepositories {userRepositories} />
+<Fetcher fetcherFn={repositoriesFetcher} let:data={repositories}>
+	<RepositoryList {repositories} />
 </Fetcher>

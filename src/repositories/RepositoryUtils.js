@@ -1,5 +1,14 @@
 import { octokit } from '../common/CommonUtils';
 
+export async function fetchRepositories(username) {
+	const repositories = await octokit.request('GET /users/{username}/repos', {
+		username,
+		sort: 'pushed'
+	});
+
+	return repositories.data;
+}
+
 export async function fetchRepository(owner, repo) {
 	const [repository, repositoryFiles] = await Promise.all([
 		octokit.request('GET /repos/{owner}/{repo}', {

@@ -3,7 +3,9 @@
 	export let suffix;
 </script>
 
-<div class="text-sm whitespace-nowrap text-slate-500">
-	{count}
-	{suffix}
-</div>
+{#if !isNaN(Number(count))}
+	<div class="text-sm whitespace-nowrap text-slate-500">
+		{count}
+		{suffix}
+	</div>
+{/if}
