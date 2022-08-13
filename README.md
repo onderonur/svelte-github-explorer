@@ -1,38 +1,40 @@
 # svelte-github-explorer
 
-This is a simple Svelte app to explore users and their repositories on GitHub.
+This is a simple Svelte app to explore users and their repositories on GitHub.  
+**Live demo is [here](https://onderonur.github.io/svelte-github-explorer).**
 
-## Creating a project
+## 💻 Tech Stack
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Framework: [SvelteKit](https://kit.svelte.dev/)
+- API: [GitHub API](https://docs.github.com/en/rest)
+- Styling: [Tailwind CSS](https://tailwindcss.com/)
+- Icons: [Material Icons](https://mui.com/material-ui/material-icons/)
+- Linting: [ESLint](https://eslint.org/)
+- Code Formatting: [Prettier](https://prettier.io/)
+- Deployment: [GitHub Pages](https://pages.github.com/) (w/ [GitHub Actions](https://github.com/features/actions))
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## ⌨️ Development
 
-# create a new project in my-app
-npm create svelte@latest my-app
+To start development, we should install our packages first.
+
+```
+npm install
 ```
 
-## Developing
+After the installation is completed, we can run the app by:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+```
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+and it will start at `http://localhost:5173`.
 
-To create a production version of your app:
+## 🚀 Build
 
-```bash
+To create a production build, we need to run the below command first:
+
+```
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+This command will create our static files in `build` folder to serve.
