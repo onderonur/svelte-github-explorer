@@ -11,7 +11,7 @@
 
 <div class="absolute inset-0 flex flex-col">
 	<header class="h-16 bg-slate-700 flex items-center justify-between gap-4 p-4">
-		<Link href={routes.home()} class="text-white font-semibold text-2xl"
+		<Link href={routes.home()} class="text-white font-semibold text-xl md:text-2xl"
 			>svelte-github-explorer</Link
 		>
 		<Link
