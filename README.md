@@ -11,7 +11,7 @@ This is a simple Svelte app to explore users and their repositories on GitHub.
 - Icons: [Material Icons](https://mui.com/material-ui/material-icons/)
 - Linting: [ESLint](https://eslint.org/)
 - Code Formatting: [Prettier](https://prettier.io/)
-- Deployment: [GitHub Pages](https://pages.github.com/) (w/ [GitHub Actions](https://github.com/features/actions))
+- Deployment: [GitHub Pages](https://pages.github.com/)
 
 ## ⌨️ Development
 
