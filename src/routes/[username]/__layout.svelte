@@ -18,7 +18,7 @@
 
 <Fetcher fetcherFn={userFetcher} let:data={user}>
 	<div class="flex gap-4 flex-col md:flex-row">
-		<div class="mx-auto basis-72 flex-none max-w-xs">
+		<div class="mx-auto basis-72 flex-none w-full max-w-xs">
 			<UserCard {user} />
 		</div>
 		<div class="flex-1 min-w-0">
