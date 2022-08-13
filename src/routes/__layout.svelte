@@ -11,9 +11,11 @@
 
 <div class="absolute inset-0 flex flex-col">
 	<header class="h-16 bg-slate-700 flex items-center justify-between gap-4 p-4">
-		<Link href={routes.home()} class="text-white font-semibold text-2xl">svelte-gitter</Link>
+		<Link href={routes.home()} class="text-white font-semibold text-2xl"
+			>svelte-github-explorer</Link
+		>
 		<Link
-			href="https://github.com/onderonur/svelte-gitter"
+			href="https://github.com/onderonur/svelte-github-explorer"
 			target="_blank"
 			rel="noopener noreferrer"
 			class="h-8 w-8 fill-white"
@@ -27,8 +29,13 @@
 	</main>
 	<footer class="h-16 bg-slate-200 flex items-center p-4 text-slate-600">
 		Built with
-		<a href="https://svelte.dev/" target="_blank" rel="noopener noreferrer" class="underline ml-1">
-			Svelte
+		<a
+			href="https://kit.svelte.dev/"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="underline ml-1"
+		>
+			SvelteKit
 		</a>
 	</footer>
 </div>

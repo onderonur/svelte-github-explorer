@@ -4,8 +4,8 @@
 
 <svelte:head>
 	{#if title}
-		<title>{title} | svelte-gitter</title>
+		<title>{title} | svelte-github-explorer</title>
 	{:else}
-		<title>svelte-gitter</title>
+		<title>svelte-github-explorer</title>
 	{/if}
 </svelte:head>

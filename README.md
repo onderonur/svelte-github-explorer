@@ -1,4 +1,4 @@
-# svelte-gitter
+# svelte-github-explorer
 
 This is a simple Svelte app to explore users and their repositories on GitHub.
 

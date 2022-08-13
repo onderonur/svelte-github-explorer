@@ -12,7 +12,7 @@ const config = {
 			fallback: 'index.html'
 		}),
 		paths: {
-			base: isProd ? '/svelte-gitter' : ''
+			base: isProd ? '/svelte-github-explorer' : ''
 		}
 	},
 	preprocess: [
