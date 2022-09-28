@@ -64,4 +64,8 @@
 	:global(.markdown img) {
 		@apply inline-block;
 	}
+
+	:global(table) {
+		@apply table-fixed w-full;
+	}
 </style>
