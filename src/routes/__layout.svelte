@@ -9,7 +9,7 @@
 
 <Head />
 
-<div class="absolute inset-0 flex flex-col">
+<div class="min-h-screen grid grid-rows-[auto_1fr_auto]">
 	<header class="h-16 bg-slate-700 flex items-center justify-between gap-4 p-4">
 		<Link href={routes.home()} class="text-white font-semibold text-xl md:text-2xl"
 			>svelte-github-explorer</Link
@@ -23,7 +23,7 @@
 			<GitHubIcon />
 		</Link>
 	</header>
-	<main class="max-w-screen-xl mx-auto p-4 w-full flex-grow">
+	<main class="max-w-screen-xl mx-auto p-4 w-full">
 		<SearchForm />
 		<slot />
 	</main>

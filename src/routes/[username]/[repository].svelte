@@ -25,21 +25,19 @@
 <Head title={`${username} - ${repositoryName}`} />
 
 <Fetcher fetcherFn={repositoryFetcher} let:data={{ repository, repositoryFiles }}>
-	<div class="flex flex-col gap-4">
-		<div class="flex gap-4 flex-col lg:flex-row">
-			<div class="flex-1">
-				<h1 class="text-xl font-semibold mb-1">
-					<Link href={routes.user(repository.owner.login)}>{repository.owner.login}</Link
-					>/{repository.name}
-				</h1>
-				<RepositoryFiles {repositoryFiles} />
-			</div>
-			<div class="flex-none basis-64">
-				<RepositorySummary {repository} />
-			</div>
+	<div class="grid gap-4 lg:grid-cols-[1fr_theme('spacing.64')]">
+		<div>
+			<h1 class="text-xl font-semibold mb-1">
+				<Link href={routes.user(repository.owner.login)}>{repository.owner.login}</Link
+				>/{repository.name}
+			</h1>
+			<RepositoryFiles {repositoryFiles} />
 		</div>
-		<Fetcher fetcherFn={readmeFetcher} let:data={readme}>
-			<RepositoryReadMe content={readme.content} />
-		</Fetcher>
+		<RepositorySummary {repository} />
+		<div class="lg:col-span-2">
+			<Fetcher fetcherFn={readmeFetcher} let:data={readme}>
+				<RepositoryReadMe content={readme.content} />
+			</Fetcher>
+		</div>
 	</div>
 </Fetcher>

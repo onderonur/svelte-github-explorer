@@ -17,12 +17,10 @@
 <Head title={username} />
 
 <Fetcher fetcherFn={userFetcher} let:data={user}>
-	<div class="flex gap-4 flex-col md:flex-row">
-		<div class="mx-auto max-w-xs basis-72 flex-none">
+	<div class="grid md:grid-cols-[theme('spacing.72')_1fr] gap-4">
+		<div class="mx-auto max-w-xs md:max-w-none">
 			<UserCard {user} />
 		</div>
-		<div class="flex-1 min-w-0">
-			<slot />
-		</div>
+		<slot />
 	</div>
 </Fetcher>
