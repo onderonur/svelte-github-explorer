@@ -1,5 +1,5 @@
 <script>
-	export let type = '';
+	export let type = 'button';
 	let className = '';
 	export { className as class };
 </script>
