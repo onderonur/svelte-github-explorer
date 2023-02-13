@@ -30,7 +30,7 @@
 </script>
 
 <div class="flex flex-col gap-2">
-	<div class="max-w-2xl mx-auto">
+	<p class="text-sm md:text-base max-w-2xl mx-auto">
 		You can type a username to search and see their repositories. This project uses <Link
 			href="https://docs.github.com/en/rest"
 			target="_blank"
@@ -39,7 +39,7 @@
 			GitHub API
 		</Link> and there is a rate limit in it. So, you may encounter some error messages about this after
 		trying this demo a couple of times.
-	</div>
+	</p>
 	{#if searchFetcher}
 		<Fetcher fetcherFn={searchFetcher} let:data={users}>
 			<UserList title={`${users.total_count} users found for "${username}"`} users={users.items} />

@@ -7,13 +7,15 @@
 	export let user;
 </script>
 
-<Card>
+<Card title={user.login}>
 	<div class="aspect-square overflow-hidden">
 		<img src={user.avatar_url} alt={user.login} />
 	</div>
 	<CardContent class="flex flex-col gap-2">
 		<h1>
-			<div class="text-2xl font-bold">{user.login}</div>
+			<div class="text-2xl font-bold text-ellipsis overflow-hidden">
+				{user.login}
+			</div>
 			{#if user.name}
 				<div class="text-lg text-slate-500">{user.name}</div>
 			{/if}

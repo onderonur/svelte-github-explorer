@@ -10,7 +10,7 @@
 
 <div>
 	<div class="text-gray-700 font-semibold text-lg">{title}</div>
-	<ul class="grid gap-2 grid-cols-[repeat(auto-fill,minmax(14rem,1fr))]">
+	<ul class="grid gap-2 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
 		{#each users as user}
 			<ListItem>
 				<Link href={routes.user(user.login)}>

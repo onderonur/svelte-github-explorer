@@ -12,10 +12,10 @@
 	}
 </script>
 
-<form class="max-w-2xl mx-auto mb-4" novalidate autocomplete="off" on:submit={handleSearch}>
+<form class="max-w-2xl w-full mx-auto" novalidate autocomplete="off" on:submit={handleSearch}>
 	<div class="flex">
 		<input
-			class="flex-1 p-2 text-lg rounded-md rounded-r-none border border-r-0"
+			class="flex-1 p-2 px-3 md:text-lg rounded-md rounded-r-none border border-r-0"
 			name="username"
 			placeholder="Type a username to search..."
 		/>
