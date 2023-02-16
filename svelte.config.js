@@ -1,5 +1,4 @@
 import adapter from '@sveltejs/adapter-static';
-import preprocess from 'svelte-preprocess';
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -14,12 +13,7 @@ const config = {
 		paths: {
 			base: isProd ? '/svelte-github-explorer' : ''
 		}
-	},
-	preprocess: [
-		preprocess({
-			postcss: true
-		})
-	]
+	}
 };
 
 export default config;
