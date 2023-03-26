@@ -6,6 +6,6 @@
 	export { className as class };
 </script>
 
-<a {href} {rel} {target} class={`cursor-pointer text-sky-500 ${className}`}>
+<a {href} {rel} {target} class={`text-sky-500 ${className}`}>
 	<slot />
 </a>
