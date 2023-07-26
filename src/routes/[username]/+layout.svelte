@@ -18,7 +18,7 @@
 
 <Fetcher fetcherFn={userFetcher} let:data={user}>
 	<div class="grid md:grid-cols-[theme(spacing.72)_1fr] gap-4">
-		<div class="mx-auto max-w-xs md:max-w-none">
+		<div class="mx-auto md:mx-0 max-w-xs md:max-w-none">
 			<UserCard {user} />
 		</div>
 		<slot />

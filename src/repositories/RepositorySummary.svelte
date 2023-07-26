@@ -7,7 +7,7 @@
 	export let repository;
 </script>
 
-<div class="flex flex-col gap-2">
+<div class="space-y-2">
 	{#if repository.description}
 		<div>
 			<h2 class="font-semibold">About</h2>

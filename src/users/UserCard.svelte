@@ -11,7 +11,7 @@
 	<div class="aspect-square overflow-hidden">
 		<img src={user.avatar_url} alt={user.login} />
 	</div>
-	<CardContent class="flex flex-col gap-2">
+	<CardContent class="space-y-2">
 		<h1>
 			<div class="text-2xl font-bold text-ellipsis overflow-hidden">
 				{user.login}
@@ -33,28 +33,29 @@
 		{#if user.company || user.location || user.blog || user.twitter_username}
 			<div>
 				{#if user.company}
-					<div class="text-sm whitespace-nowrap text-slate-500">
+					<div class="text-sm text-slate-500">
 						{user.company}
 					</div>
 				{/if}
 				{#if user.location}
-					<div class="text-sm whitespace-nowrap text-slate-500">
+					<div class="text-sm text-slate-500">
 						{user.location}
 					</div>
 				{/if}
 				{#if user.blog}
-					<div class="text-sm whitespace-nowrap">
-						<Link href={user.blog} target="_blank" rel="noopener noreferrer">
+					<div>
+						<Link href={user.blog} target="_blank" rel="noopener noreferrer" class="text-sm">
 							{user.blog}
 						</Link>
 					</div>
 				{/if}
 				{#if user.twitter_username}
-					<div class="text-sm whitespace-nowrap">
+					<div>
 						<Link
 							href={`https://twitter.com/${user.twitter_username}`}
 							target="_blank"
 							rel="noopener noreferrer"
+							class="text-sm"
 						>
 							{user.twitter_username}
 						</Link>
