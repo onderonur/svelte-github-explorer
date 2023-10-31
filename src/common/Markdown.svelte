@@ -4,7 +4,9 @@
 	export let content;
 </script>
 
-<div class="markdown">
+<!-- grid is added to prevent overflow of tags like pre,
+to isolate children from affecting the size of the parent container. -->
+<div class="markdown grid">
 	{@html marked.parse(content)}
 </div>
 
@@ -46,7 +48,7 @@
 	}
 
 	:global(.markdown pre) {
-		@apply overflow-x-auto bg-gray-200 px-1;
+		@apply overflow-x-auto bg-gray-200 p-2;
 	}
 
 	:global(.markdown pre code) {
@@ -65,7 +67,15 @@
 		@apply inline-block;
 	}
 
-	:global(table) {
+	:global(.markdown table) {
 		@apply table-fixed w-full;
+	}
+
+	:global(.markdown tr:nth-child(even)) {
+		@apply bg-slate-100;
+	}
+
+	:global(.markdown th, .markdown td) {
+		@apply border p-2 break-words;
 	}
 </style>
