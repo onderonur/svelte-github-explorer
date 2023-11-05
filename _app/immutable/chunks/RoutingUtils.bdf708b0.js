@@ -1,1 +1,0 @@
-import{e as t}from"./singletons.ea9a5650.js";const $={home:({username:r,page:e}={})=>{const s=new URLSearchParams;r&&s.set("username",r),e&&s.set("page",e);const o=s.toString();return`${t}/${o?`?${o}`:""}`},user:r=>`${t}/${r}`,repository:({username:r,repository:e})=>`${t}/${r}/${e}`};export{$ as r};
