@@ -29,7 +29,7 @@
 	}
 </script>
 
-<div class="space-y-2">
+<div class="flex flex-col gap-2">
 	<p class="text-sm md:text-base max-w-2xl mx-auto">
 		You can type a username to search and see their repositories. This project uses <Link
 			href="https://docs.github.com/en/rest"

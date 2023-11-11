@@ -23,7 +23,7 @@
 			<GitHubIcon />
 		</Link>
 	</header>
-	<main class="max-w-screen-xl mx-auto p-2 md:p-3 w-full space-y-2 md:space-y-3">
+	<main class="max-w-screen-xl mx-auto p-2 md:p-3 w-full flex flex-col gap-2 md:gap-3">
 		<UserSearchForm />
 		<slot />
 	</main>

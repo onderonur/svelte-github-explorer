@@ -5,7 +5,7 @@
 	export let repositories;
 </script>
 
-<ul class="space-y-3">
+<ul class="flex flex-col gap-3">
 	{#each repositories as repository}
 		<ListItem>
 			<RepositoryCard {repository} />

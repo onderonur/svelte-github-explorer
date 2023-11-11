@@ -11,7 +11,7 @@
 	<div class="aspect-square overflow-hidden">
 		<img src={user.avatar_url} alt={user.login} />
 	</div>
-	<CardContent class="space-y-2">
+	<CardContent class="flex flex-col gap-2">
 		<h1>
 			<div class="text-2xl font-bold text-ellipsis overflow-hidden">
 				{user.login}

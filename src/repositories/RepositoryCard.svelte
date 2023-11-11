@@ -11,7 +11,7 @@
 </script>
 
 <Card>
-	<CardContent class="space-y-2">
+	<CardContent class="flex flex-col gap-2">
 		<div>
 			<div class="flex justify-between gap-2">
 				<Link
