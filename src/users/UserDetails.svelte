@@ -20,6 +20,7 @@
 				<div class="text-lg text-slate-500">{user.name}</div>
 			{/if}
 		</h1>
+		<p />
 		{#if user.bio}
 			<p>
 				{user.bio}
