@@ -12,22 +12,18 @@
 	}
 </script>
 
-<form
-	role="search"
-	class="max-w-2xl w-full mx-auto"
-	novalidate
-	autocomplete="off"
-	on:submit={handleSearch}
->
-	<div class="flex">
-		<input
-			type="search"
-			class="flex-1 p-2 px-3 md:text-lg rounded-md rounded-r-none border border-r-0"
-			name="username"
-			placeholder="Type a username to search..."
-		/>
-		<Button type="submit" class="rounded-l-none ">
-			<SearchIcon class="h-6 w-6 fill-emerald-800" />
-		</Button>
-	</div>
-</form>
+<search>
+	<form class="max-w-2xl w-full mx-auto" novalidate autocomplete="off" on:submit={handleSearch}>
+		<div class="flex">
+			<input
+				type="search"
+				class="flex-1 p-2 px-3 md:text-lg rounded-md rounded-r-none border border-r-0"
+				name="username"
+				placeholder="Type a username to search..."
+			/>
+			<Button type="submit" class="rounded-l-none ">
+				<SearchIcon class="h-6 w-6 fill-emerald-800" />
+			</Button>
+		</div>
+	</form>
+</search>
