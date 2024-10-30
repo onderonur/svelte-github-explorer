@@ -18,7 +18,7 @@
 			href="https://github.com/onderonur/svelte-github-explorer"
 			target="_blank"
 			rel="noopener noreferrer"
-			class="h-7 w-7 md:h-8 md:w-8 fill-white"
+			class="size-7 md:size-8 fill-white"
 		>
 			<GitHubIcon />
 		</Link>

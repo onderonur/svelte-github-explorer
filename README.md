@@ -18,13 +18,13 @@ This is a simple Svelte app to explore users and their repositories on GitHub.
 To start development, we should install our packages first.
 
 ```
-npm install
+pnpm install
 ```
 
 After the installation is completed, we can run the app by:
 
 ```
-npm run dev
+pnpm dev
 ```
 
 and it will start on `http://localhost:5173`.
@@ -34,7 +34,7 @@ and it will start on `http://localhost:5173`.
 To create a production build, we need to run the below command first:
 
 ```
-npm run build
+pnpm build
 ```
 
 This command will create our static files in `build` folder to serve.

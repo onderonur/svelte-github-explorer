@@ -22,7 +22,7 @@
 				placeholder="Type a username to search..."
 			/>
 			<Button type="submit" class="rounded-l-none ">
-				<SearchIcon class="h-6 w-6 fill-emerald-800" />
+				<SearchIcon class="size-6 fill-emerald-800" />
 			</Button>
 		</div>
 	</form>
