@@ -1,9 +1,9 @@
 <script>
-	import Card from '../common/Card.svelte';
-	import CardContent from '../common/CardContent.svelte';
-	import Link from '../common/Link.svelte';
-	import ListItem from '../common/ListItem.svelte';
-	import { routes } from '../routing/RoutingUtils';
+	import Card from '../../../core/ui/components/Card.svelte';
+	import CardContent from '../../../core/ui/components/CardContent.svelte';
+	import Link from '../../../core/ui/components/Link.svelte';
+	import ListItem from '../../../core/ui/components/ListItem.svelte';
+	import { routes } from '../../../core/routing/utils';
 
 	export let user;
 </script>

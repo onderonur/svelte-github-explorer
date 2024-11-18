@@ -1,6 +1,6 @@
 <script>
-	import RepositoryCard from '../repositories/RepositoryCard.svelte';
-	import ListItem from '../common/ListItem.svelte';
+	import RepositoryCard from '../../repositories/components/RepositoryCard.svelte';
+	import ListItem from '../../../core/ui/components/ListItem.svelte';
 
 	export let repositories;
 </script>

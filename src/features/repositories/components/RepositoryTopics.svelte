@@ -1,7 +1,6 @@
 <script>
-	import Chip from '../common/Chip.svelte';
-
-	import ListItem from '../common/ListItem.svelte';
+	import Chip from '../../../core/ui/components/Chip.svelte';
+	import ListItem from '../../../core/ui/components/ListItem.svelte';
 
 	export let topics;
 </script>

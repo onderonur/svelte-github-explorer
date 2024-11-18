@@ -1,6 +1,6 @@
 <script>
-	import Count from '../common/Count.svelte';
-	import ListItem from '../common/ListItem.svelte';
+	import Count from '../../../core/ui/components/Card.svelte';
+	import ListItem from '../../../core/ui/components/ListItem.svelte';
 
 	export let direction = 'horizontal';
 	$: isHorizontal = direction === 'horizontal';

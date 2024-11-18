@@ -1,8 +1,8 @@
 <script>
-	import Card from '../common/Card.svelte';
-	import CardContent from '../common/CardContent.svelte';
-	import Count from '../common/Count.svelte';
-	import Link from '../common/Link.svelte';
+	import Card from '../../../core/ui/components/Card.svelte';
+	import CardContent from '../../../core/ui/components/CardContent.svelte';
+	import Count from '../../../core/ui/components/Count.svelte';
+	import Link from '../../../core/ui/components/Link.svelte';
 
 	export let user;
 </script>

@@ -1,8 +1,8 @@
 <script>
 	import { goto } from '$app/navigation';
-	import Button from '../common/Button.svelte';
-	import SearchIcon from '../icons/SearchIcon.svelte';
-	import { routes } from '../routing/RoutingUtils';
+	import Button from '../../../core/ui/components/Button.svelte';
+	import SearchIcon from '../../../core/icons/components/SearchIcon.svelte';
+	import { routes } from '../../../core/routing/utils';
 
 	function handleSearch(e) {
 		e.preventDefault();

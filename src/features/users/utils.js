@@ -1,4 +1,4 @@
-import { FIRST_PAGE, octokit } from '../common/CommonUtils';
+import { FIRST_PAGE, octokit } from '../../core/shared/utils';
 
 export async function fetchUser(username) {
 	const user = await octokit.request('GET /users/{username}', { username });

@@ -1,13 +1,13 @@
 <script>
-	import Fetcher from '../common/Fetcher.svelte';
-	import Link from '../common/Link.svelte';
-	import { searchUsers } from '../users/UserUtils';
+	import Fetcher from '../core/ui/components/Fetcher.svelte';
+	import Link from '../core/ui/components/Link.svelte';
+	import { searchUsers } from '../features/users/utils';
 	import { page } from '$app/stores';
-	import UserList from '../users/UserList.svelte';
-	import Button from '../common/Button.svelte';
+	import UserList from '../features/users/components/UserList.svelte';
+	import Button from '../core/ui/components/Button.svelte';
 	import { goto } from '$app/navigation';
-	import { routes } from '../routing/RoutingUtils';
-	import { FIRST_PAGE } from '../common/CommonUtils';
+	import { routes } from '../core/routing/utils';
+	import { FIRST_PAGE } from '../core/shared/utils';
 
 	let username;
 	let searchFetcher;

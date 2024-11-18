@@ -1,4 +1,4 @@
-import { octokit } from '../common/CommonUtils';
+import { octokit } from '../../core/shared/utils';
 
 export async function fetchRepositories(username) {
 	const repositories = await octokit.request('GET /users/{username}/repos', {

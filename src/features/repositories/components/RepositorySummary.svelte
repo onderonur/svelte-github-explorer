@@ -1,5 +1,5 @@
 <script>
-	import Link from '../common/Link.svelte';
+	import Link from '../../../core/ui/components/Link.svelte';
 	import RepositoryCountInfo from './RepositoryCountInfo.svelte';
 	import RepositoryLanguage from './RepositoryLanguage.svelte';
 	import RepositoryTopics from './RepositoryTopics.svelte';

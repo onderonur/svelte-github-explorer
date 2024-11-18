@@ -1,10 +1,10 @@
 <script>
 	import '../app.css';
-	import Link from '../common/Link.svelte';
-	import UserSearchForm from '../users/UserSearchForm.svelte';
-	import GitHubIcon from '../icons/GitHubIcon.svelte';
-	import Head from '../common/Head.svelte';
-	import { routes } from '../routing/RoutingUtils';
+	import Link from '../core/ui/components/Link.svelte';
+	import UserSearchForm from '../features/users/components/UserSearchForm.svelte';
+	import GitHubIcon from '../core/icons/components/GitHubIcon.svelte';
+	import Head from '../core/ui/components/Head.svelte';
+	import { routes } from '../core/routing/utils';
 </script>
 
 <Head />

@@ -1,9 +1,9 @@
 <script>
 	import { page } from '$app/stores';
-	import { fetchUser } from '../../users/UserUtils';
-	import UserDetails from '../../users/UserDetails.svelte';
-	import Fetcher from '../../common/Fetcher.svelte';
-	import Head from '../../common/Head.svelte';
+	import { fetchUser } from '../../features/users/utils';
+	import UserDetails from '../../features/users/components/UserDetails.svelte';
+	import Fetcher from '../../core/ui/components/Fetcher.svelte';
+	import Head from '../../core/ui/components/Head.svelte';
 
 	let username;
 	let userFetcher;

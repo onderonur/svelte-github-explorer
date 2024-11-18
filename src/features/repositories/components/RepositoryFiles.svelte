@@ -1,6 +1,6 @@
 <script>
-	import FolderIcon from '../icons/FolderIcon.svelte';
-	import FileIcon from '../icons/FileIcon.svelte';
+	import FolderIcon from '../../../core/icons/components/FolderIcon.svelte';
+	import FileIcon from '../../../core/icons/components/FileIcon.svelte';
 
 	export let repositoryFiles;
 </script>

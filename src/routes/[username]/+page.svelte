@@ -1,8 +1,8 @@
 <script>
 	import { page } from '$app/stores';
-	import { fetchRepositories } from '../../repositories/RepositoryUtils';
-	import RepositoryList from '../../repositories/RepositoryList.svelte';
-	import Fetcher from '../../common/Fetcher.svelte';
+	import { fetchRepositories } from '../../features/repositories/utils';
+	import RepositoryList from '../../features/repositories/components/RepositoryList.svelte';
+	import Fetcher from '../../core/ui/components/Fetcher.svelte';
 
 	let username;
 	let repositoriesFetcher;

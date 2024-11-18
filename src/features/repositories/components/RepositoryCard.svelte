@@ -1,11 +1,11 @@
 <script>
-	import Link from '../common/Link.svelte';
-	import Card from '../common/Card.svelte';
-	import CardContent from '../common/CardContent.svelte';
+	import Link from '../../../core/ui/components/Link.svelte';
+	import Card from '../../../core/ui/components/Card.svelte';
+	import CardContent from '../../../core/ui/components/CardContent.svelte';
 	import RepositoryCountInfo from './RepositoryCountInfo.svelte';
 	import RepositoryLanguage from './RepositoryLanguage.svelte';
 	import RepositoryTopics from './RepositoryTopics.svelte';
-	import { routes } from '../routing/RoutingUtils';
+	import { routes } from '../../../core/routing/utils';
 
 	export let repository;
 </script>

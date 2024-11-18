@@ -1,5 +1,5 @@
 <script>
-	import Chip from '../common/Chip.svelte';
+	import Chip from '../../../core/ui/components/Chip.svelte';
 
 	export let language;
 </script>

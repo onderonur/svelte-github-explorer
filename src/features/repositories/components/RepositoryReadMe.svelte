@@ -1,6 +1,6 @@
 <script>
 	import { Buffer } from 'buffer';
-	import Markdown from '../common/Markdown.svelte';
+	import Markdown from '../../../core/ui/components/Markdown.svelte';
 
 	export let content;
 </script>

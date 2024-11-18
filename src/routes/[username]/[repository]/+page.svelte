@@ -1,13 +1,13 @@
 <script>
 	import { page } from '$app/stores';
-	import { fetchRepository, fetchRepositoryContent } from '../../../repositories/RepositoryUtils';
-	import Fetcher from '../../../common/Fetcher.svelte';
-	import Link from '../../../common/Link.svelte';
-	import RepositoryFiles from '../../../repositories/RepositoryFiles.svelte';
-	import Head from '../../../common/Head.svelte';
-	import RepositoryReadMe from '../../../repositories/RepositoryReadMe.svelte';
-	import RepositorySummary from '../../../repositories/RepositorySummary.svelte';
-	import { routes } from '../../../routing/RoutingUtils';
+	import { fetchRepository, fetchRepositoryContent } from '../../../features/repositories/utils';
+	import Fetcher from '../../../core/ui/components/Fetcher.svelte';
+	import Link from '../../../core/ui/components/Link.svelte';
+	import RepositoryFiles from '../../../features/repositories/components/RepositoryFiles.svelte';
+	import Head from '../../../core/ui/components/Head.svelte';
+	import RepositoryReadMe from '../../../features/repositories/components/RepositoryReadMe.svelte';
+	import RepositorySummary from '../../../features/repositories/components/RepositorySummary.svelte';
+	import { routes } from '../../../core/routing/utils';
 
 	let username;
 	let repositoryName;
