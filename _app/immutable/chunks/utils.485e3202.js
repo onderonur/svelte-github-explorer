@@ -1,0 +1,1 @@
+import{o as t,a as r}from"./Fetcher.39a56d21.js";async function i(s){return(await t.request("GET /users/{username}",{username:s})).data}async function p(s,e){const a=await t.request(`GET /search/users?q=${encodeURIComponent(`${s} in:login type:user`)}&page=${e}&per_page=30`),n=e>r,o=e*30<a.data.total_count;return{...a.data,hasPreviousPage:n,hasNextPage:o}}export{i as f,p as s};
