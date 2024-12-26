@@ -1,5 +1,5 @@
 <script>
-	import Count from '../../../core/ui/components/Card.svelte';
+	import Count from '../../../core/ui/components/Count.svelte';
 	import ListItem from '../../../core/ui/components/ListItem.svelte';
 
 	export let direction = 'horizontal';
